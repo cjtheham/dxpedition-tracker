@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+  <link href="./bootstrap.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/stormdb/dist/StormDB.min.js"></script>
+  <script src="https://unpkg.com/stormdb/dist/BrowserEngine.min.js"></script>
+  <title>Hello World!</title>
+</head>
+<body>
+  <h1>WW0CJ's DXpedition Tracker</h1>
+  
+  <h3>DX Callsign: <input type="text" id="callsign"><button onclick="updateCallsign(this)">Update</button></h3>
+  
+  <table class="table">
+    <tead>
+      <tr>
+        <th></th>
+        <th scope="col">160m</th>
+        <th scope="col">80m</th>
+        <th scope="col">60m</th>
+        <th scope="col">40m</th>
+        <th scope="col">30m</th>
+        <th scope="col">20m</th>
+        <th scope="col">17m</th>
+        <th scope="col">15m</th>
+        <th scope="col">12m</th>
+        <th scope="col">10m</td>
+        <th scope="col">6m</th>
+        </tr>
+      </tead>
+      <tbody>
+        <tr>
+          <td>SSB</td>
+          <td><input type="checkbox" name="160mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="80mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="60mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="40mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td></td>
+          <td><input type="checkbox" name="20mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="17mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="15mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="12mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="10mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="6mSSB" class="an-input" onchange="toggleCheckbox(this)"></td>
+        </tr>
+        <tr>
+          <td>DIGI</td>
+          <td><input type="checkbox" name="160mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="80mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="60mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="40mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="30mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="20mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="17mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="15mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="12mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="10mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="6mDIGI" class="an-input" onchange="toggleCheckbox(this)"></td>
+        </tr>
+        <tr>
+          <td>CW</td>
+          <td><input type="checkbox" name="160mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="80mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="60mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="40mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="30mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="20mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="17mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="15mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="12mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="10mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+          <td><input type="checkbox" name="6mCW" class="an-input" onchange="toggleCheckbox(this)"></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- You can also require other files to run in this process -->
+   
+    <script src="./renderer.js"></script>
+  </body>
+  </html>
+  
